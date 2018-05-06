@@ -14,6 +14,7 @@ namespace CommunityProject_ProjectUnity.Models
             this.Skills = new HashSet<Skill>();
             this.Qualifications = new HashSet<Qualification>();
             this.Schools = new HashSet<School>();
+            this.Applicants = new HashSet<Applicant>();
            
         }
         public int ID { get; set; }
@@ -148,6 +149,8 @@ namespace CommunityProject_ProjectUnity.Models
 
        
         public virtual ICollection<Qualification> Qualifications { get; set; }
+
+        public virtual ICollection<Applicant> Applicants { get; set; }
 
     }
 }
