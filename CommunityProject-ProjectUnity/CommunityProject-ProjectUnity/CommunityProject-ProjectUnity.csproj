@@ -375,6 +375,10 @@
     <Compile Include="DAL\Migrations\201804141902540_SchoolCityIDRemoved.Designer.cs">
       <DependentUpon>201804141902540_SchoolCityIDRemoved.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAL\Migrations\201805062323438_PostingSaveModelChange.cs" />
+    <Compile Include="DAL\Migrations\201805062323438_PostingSaveModelChange.Designer.cs">
+      <DependentUpon>201805062323438_PostingSaveModelChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAL\ProjectUnityEntities.cs" />
     <Compile Include="DAL\SecurityMigrations\201804030630422_SecurityNewInitial.cs" />
     <Compile Include="DAL\SecurityMigrations\201804030630422_SecurityNewInitial.Designer.cs">
@@ -1053,6 +1057,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DAL\Migrations\201804141902540_SchoolCityIDRemoved.resx">
       <DependentUpon>201804141902540_SchoolCityIDRemoved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DAL\Migrations\201805062323438_PostingSaveModelChange.resx">
+      <DependentUpon>201805062323438_PostingSaveModelChange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DAL\SecurityMigrations\201804030630422_SecurityNewInitial.resx">
       <DependentUpon>201804030630422_SecurityNewInitial.cs</DependentUpon>

@@ -2025,3 +2025,4 @@ D:\GitHUb Repo\ProjectUnity\CommunityProject-ProjectUnity\CommunityProject-Proje
 D:\GitHUb Repo\ProjectUnity\CommunityProject-ProjectUnity\CommunityProject-ProjectUnity\obj\Debug\CommunityProject-ProjectUnity.csproj.CopyComplete
 D:\GitHUb Repo\ProjectUnity\CommunityProject-ProjectUnity\CommunityProject-ProjectUnity\obj\Debug\CommunityProject-ProjectUnity.dll
 D:\GitHUb Repo\ProjectUnity\CommunityProject-ProjectUnity\CommunityProject-ProjectUnity\obj\Debug\CommunityProject-ProjectUnity.pdb
+D:\GitHUb Repo\ProjectUnity\CommunityProject-ProjectUnity\CommunityProject-ProjectUnity\obj\Debug\CommunityProject_ProjectUnity.DAL.EntityMigrations.PostingSaveModelChange.resources

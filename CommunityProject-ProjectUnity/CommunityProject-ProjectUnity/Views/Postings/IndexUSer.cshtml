@@ -85,7 +85,7 @@
                                         <th>Name</th>
                                         <th>Closing Date</th>
                                         <th>Salary</th>
-                                       
+
                                         <th>Schools</th>
                                         <th>FTE</th>
                                         <th>No. Of Openings</th>
@@ -95,32 +95,35 @@
                                 </thead>
                                 <tbody>
                                     @foreach (var posting in Model)
-                                    {
-                                        <tr>
-                                            <td>@posting.Name</td>
-                                            <td>@posting.ClosingDate</td>
-                                            <td>@posting.Salary</td>
-                                            
-
-                                            <td>
-                                                @foreach (var school in posting.Schools)
-                                                {
-                                                    @school.Shortname<br />
-                                                }
+                        {
+                            <tr>
+                                <td>@posting.Name</td>
+                                <td>@posting.ClosingDate</td>
+                                <td>@posting.Salary</td>
 
 
-                                            </td>
-                                            <td>@posting.FTE</td>
-                                            <td>@posting.Openings</td>
-                                            <td>
-                                                @Html.ActionLink("Apply", "Create", "Applications", new { id = posting.ID }, null)
+                                <td>
+                                    @foreach (var school in posting.Schools)
+                        {
+                            @school.Shortname<br />
+            }
 
-                                            </td>
-                                            <td>
-                                                @Html.ActionLink("View More Details", "Details", "Postings", new { id = posting.ID }, null)
-                                            </td>
-                                        </tr>
-                                    }
+
+                                </td>
+                                <td>@posting.FTE</td>
+                                <td>@posting.Openings</td>
+                                <td>
+                                    @Html.ActionLink("Apply", "Create", "Applications", new { id = posting.ID }, null)
+
+                                </td>
+                                <td>
+                                    @Html.ActionLink("View More Details", "Details", "Postings", new { id = posting.ID }, null)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Save", "Details", "Postings", new { id = posting.ID }, null)
+                                </td>
+                            </tr>
+            }
                                 </tbody>
                             </table>
                         </div>
