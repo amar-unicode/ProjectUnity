@@ -18,6 +18,7 @@ namespace CommunityProject_ProjectUnity.Models
             this.Skills = new HashSet<Skill>();
             this.Files = new HashSet<aFile>();
             this.Qualifications = new HashSet<Qualification>();
+            this.Postings = new HashSet<Posting>();
         }
 
         [Display(Name = "Applicant")]
@@ -86,12 +87,11 @@ namespace CommunityProject_ProjectUnity.Models
         //Added to hold related files
         public ICollection<aFile> Files { get; set; }
         public int QualificationID { get; set; }
-
-        
       
         public ICollection<Application> Applications { get; set; }
         public virtual ICollection<Skill> Skills { get; set; }
 
+        public virtual ICollection<Posting> Postings { get; set; }
         public virtual ICollection<Qualification> Qualifications { get; set; }
     }
 }
