@@ -308,8 +308,27 @@ namespace CommunityProject_ProjectUnity.Controllers
             PopulateDropDownLists();
             return View("Create", posting);
         }
+        public ActionResult Save(int id)
+        {
 
-        
+            Posting posting = db.Postings.Where(p => p.ID == id)
+                                         .SingleOrDefault();
+
+            Applicant applicant = db.Applicants.Where(a => a.Email == User.Identity.Name)
+                          .Include(a => a.Postings)
+                          .SingleOrDefault();
+
+            applicant.Postings.Add(posting);
+            db.SaveChanges();
+
+            return View(posting);
+        }
+
+        public ActionResult SavedPostings()
+        {
+            var applicants = db.Applicants.Include(a => a.Postings);
+            return View(applicants.ToList());
+        }
 
         // POST: Postings/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 

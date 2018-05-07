@@ -926,6 +926,8 @@
     <Content Include="Views\Postings\CSVUpload.cshtml" />
     <Content Include="Views\Postings\UserView.cshtml" />
     <Content Include="Views\Applications\SelectedApplications.cshtml" />
+    <Content Include="Views\Postings\Save.cshtml" />
+    <Content Include="Views\Postings\SavedPostings.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
